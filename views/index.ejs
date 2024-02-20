@@ -1,0 +1,141 @@
+<%- include('partials/header.ejs'); -%>
+    <section>
+        <div class="blo bg-banner">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col">
+                        <h1>Hello World</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolorum cupiditate animi
+                            repellat
+                            corporis deleniti!</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolorum cupiditate animi
+                            repellat
+                            corporis deleniti!</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolorum cupiditate animi
+                            repellat
+                            corporis deleniti!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6 py-2 mb-4">
+                    <div class="row p-3">
+                        <div class="col-8 align-self-center">
+                            <a href="http://">
+                                <h4><b>Attosecond spectroscopy wins 2023’s Nobel Prize in Physics</b></h4>
+                            </a>
+                            <p>Our greatest tool for exploring the world inside atoms and molecules, and specifically
+                                electron transitions, just won 2023’s.</p>
+                            <div><b>Dave Rogers</b> in <b>News</b></div>
+                            <span>
+                                <%= postDB[18].postDate %> · 3 Min Read · <i class="fa-regular fa-bookmark"></i>
+                            </span>
+                        </div>
+                        <div class="col-4 bg-light">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-2 mb-4">
+                    <div class="row p-3">
+                        <div class="col-8 align-self-center">
+                            <a href="http://">
+                                <h4>Attosecond spectroscopy wins 2023’s Nobel Prize in Physics</h4>
+                            </a>
+                            <p>Our greatest tool for exploring the world inside atoms and molecules, and specifically
+                                electron transitions, just won 2023’s.</p>
+                            <div><b>Dave Rogers</b> in <b>News</b></div>
+                            <span>Nov 5 · 3 Min Read · B</span>
+                        </div>
+                        <div class="col-4 align-self-center text-center">
+                            <img alt="Language, Dialect, and the Time-Space Continuum" class=""
+                                src="https://miro.medium.com/v2/resize:fill:200:200/1*e3kgNMHXevUcsoK7BwO9yw.png"
+                                width="150px" height="125px" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-2 mb-4">
+                    <div class="row">
+                        <div class="col-8 align-self-center">
+                            <a href="http://">
+                                <h4>Attosecond spectroscopy wins 2023’s Nobel Prize in Physics</h4>
+                            </a>
+                            <p>Our greatest tool for exploring the world inside atoms and molecules, and specifically
+                                electron transitions, just won 2023’s.</p>
+                            <div><b>Dave Rogers</b> in <b>News</b></div>
+                            <span>Nov 5 · 3 Min Read · B</span>
+                        </div>
+                        <div class="col-4 align-self-center text-center">
+                            <img alt="Language, Dialect, and the Time-Space Continuum" class=""
+                                src="https://miro.medium.com/v2/resize:fill:200:200/1*e3kgNMHXevUcsoK7BwO9yw.png"
+                                width="150px" height="125px" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row p-2 mb-2">
+                        <div class="col-8 align-self-center ">
+
+                        </div>
+                        <div class="col-4 text-center  align-self-center"></div>
+                    </div>
+                    <div class="row p-2 mb-2">
+                        <div class="col-md-8 align-self-center ">
+                            <a href="http://">
+                                <h3>postheading</h3>
+                            </a>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolorum cupiditate animi
+                                repellat corporis deleniti!</p>
+                            <div><b>Dave Rogers</b> in <b>News</b></div>
+                            <span>Nov 5 . 3 Min Read . Bookmark</span>
+                        </div>
+                        <div class="col-md-4 text-center  align-self-center"><img
+                                alt="Language, Dialect, and the Time-Space Continuum" class=""
+                                src="https://miro.medium.com/v2/resize:fill:200:200/1*WvMhIS1NZjopR0FfJ_Xp_Q.png"
+                                width="200px" height="134px" loading="lazy"></div>
+                    </div>
+                </div>
+
+                <% for(let i=1; i < postDB.length; i++) { %>
+                    <div class="col-8 m-1 rounded-5 bg-ppurple">
+                        <h1>
+                            <a href="./post/<%= postDB[i].postTitle %>">
+                                <%= postDB[i].postTitle %>
+                            </a>
+                        </h1>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer.ejs'); -%> 

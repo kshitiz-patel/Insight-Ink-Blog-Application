@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs'); -%>
+    <section>
+        <div class="container">
+            <form action="/compose" method="post" class="row">
+                <div class="col-md-8">
+                    <label>Title</label>
+                    <input type="text" name="postTitle" style="width:100%" value="">
+                    <label>Post</label>
+                    <textarea name="postBody" rows="10" style="width:100%"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label>Author</label>
+                    <input type="text" name="postTitle" style="width:100%" value="" class="mb-3">
+                    <label>Article Category</label>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn-lg w-100" width="100%">Publish</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <%- include('partials/footer.ejs'); -%>

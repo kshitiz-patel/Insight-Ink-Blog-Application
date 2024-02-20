@@ -1,0 +1,41 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.navbar-brand {
+  /* letter-spacing: 0.5px; */
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+}
+.period {
+  color: #3aa6b9;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #1abc9c;
+}
+
+.bg-ppurple {
+  background-color: #dfccfb;
+}
+.bg-banner {
+  background-color: #ffd0d0;
+}
+.blo {
+  height: 70vh;
+}
